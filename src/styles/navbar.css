@@ -1,0 +1,168 @@
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+
+  padding: 2vw 5vw;
+}
+
+#toggleButton {
+  font-size: 1.8rem;
+  cursor: pointer;
+  border-radius: 50%;
+  background: none;
+  outline: 0;
+  border: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.input {
+  width: 40%;
+  padding: 0.7vw 1vw;
+  /* background: rgba( 0, 0, 0, 0.15 ); */
+  /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  border-radius: 2vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1vw;
+}
+
+.input button {
+  padding: 0.5vw;
+  font-size: 1.2em;
+  color: rgb(137, 135, 133);
+  border: 0;
+  outline: 0;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+}
+.input > input {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  font-size: 1rem;
+  color: #283979;
+  letter-spacing: 0.1vw;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+::-webkit-input-placeholder {
+  /* color: rgb(110, 107, 107); */
+  font-weight: 500;
+  letter-spacing: 0.1vw;
+  font-family: "Inter", sans-serif;
+  font-size: 0.8em;
+}
+::-moz-placeholder {
+  /* color: rgb(110, 107, 107); */
+  font-weight: 500;
+  letter-spacing: 0.1vw;
+  font-family: "Inter", sans-serif;
+  font-size: 0.8em;
+}
+:-ms-input-placeholder {
+  /* color: rgb(110, 107, 107); */
+  font-weight: 500;
+  letter-spacing: 0.1vw;
+  font-family: "Inter", sans-serif;
+  font-size: 0.8em;
+}
+::-ms-input-placeholder {
+  /* color: rgb(110, 107, 107); */
+  font-weight: 500;
+  letter-spacing: 0.1vw;
+  font-family: "Inter", sans-serif;
+  font-size: 0.8em;
+}
+::placeholder {
+  /* color: rgb(110, 107, 107); */
+  font-weight: 500;
+  letter-spacing: 0.1vw;
+  font-family: "Inter", sans-serif;
+  font-size: 0.8em;
+}
+
+nav .button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #4cbb17;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1vw;
+  padding: 0.7vw 1vw;
+  letter-spacing: 0.1vw;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  border-radius: 2vw;
+  cursor: pointer;
+}
+
+.button button {
+  background: transparent;
+  border: 0;
+  outline: 0;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 630px) {
+  nav {
+    padding: 4vw;
+  }
+
+  .input {
+    padding: 1vw 2vw;
+
+    position: absolute;
+    top: 11vw;
+    width: 92%;
+  }
+}
+@media screen and (max-width: 528px) {
+  .input {
+    padding: 2vw 2vw;
+
+    top: 13vw;
+  }
+  nav .button{
+    padding: 1vw 2vw;
+  }
+}
+@media screen and (max-width: 528px) {
+  .input {
+    padding: 5vw;
+
+    top: 20vw;
+  }
+  nav .button{
+    padding: 3vw 2vw;
+  }
+}
+@media screen and (max-width: 320px) {
+  
+  .input {
+
+    width: 90%;
+
+  }
+
+}
