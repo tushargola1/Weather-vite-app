@@ -1,0 +1,149 @@
+.row1{
+    padding: 0vw 5vw;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.time-date{
+    background: rgba( 0, 0, 0, 0.1 );
+/* box-shadow: 0 0px 32px 0 rgba(148, 144, 144, 0.37); */
+box-shadow: 12px 11px 15px 2px #000000;
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 1vw;
+/* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+width: 30vw;
+display: grid;
+place-items: center;
+padding: 1.2vw 0;
+/* gap: vw; */
+}
+
+.time-date h2{
+    font-size: 3rem;
+    color: white;
+}
+
+.val{
+    text-align: center;
+    color: white;
+}
+.time-date .val h1{
+    font-size: 4rem;
+
+}
+.time{
+    font-weight: bolder;
+}
+.date{
+    font-size: 1.2rem;
+}
+
+
+
+.weather-details{
+    width:50vw;
+    background: rgba( 0, 0, 0, 0.1 );
+/* box-shadow: 0 0px 32px 0 rgba(148, 144, 144, 0.37); */
+box-shadow: 12px 11px 15px 2px #000000;
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 1vw;
+color: white;
+padding: 1.2vw 0;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.degree{
+    width: 10vw;
+    
+
+}
+
+.degree h1{
+    font-size: 5rem;
+ 
+    background: -webkit-linear-gradient(135deg,rgb(130, 115, 130) 20%, rgba(149,162,162,1) 80% );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: red;
+    
+}
+
+.degree h3{
+    font-size: 1.2rem;
+    font-weight: 400;
+    background: -webkit-linear-gradient(135deg, rgba(149,162,162,1) 100%, rgba(43,42,43,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+:is(.sunrise , .sunset) img{
+width: 3vw;
+
+}
+:is(.sunrise , .sunset){
+    display: flex;
+    align-items: center;
+  /* justify-content: center; */
+  
+  gap: 1vw;
+}
+
+.sun p{
+    /* padding: 0.5vw 0; */
+    font-size: 1.1rem;
+}
+.sun h6{
+    /* padding: 0.5vw 0; */
+    font-size: 1rem;
+}
+
+.sunrise{
+    margin: 1.1vw 0;
+}
+
+.icon{
+    text-align: center;
+
+}
+
+.icon img{
+   width: 12vw;
+   height: 12vw;
+ 
+}
+
+.icon p{
+    font-size: 3rem;
+}
+
+.infor{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 2vw;
+  grid-column-gap: 5vw;
+}
+
+.gap p{
+    padding: 0.3vw 0;
+    font-size: 1.1rem;
+    letter-spacing: 0.1vw;
+ 
+
+}
+.size{
+    font-size: 2.5rem;
+}
+
+
+
+@media screen and (max-width : 1024px) {
+
+    .row1{
+        /* justify-content: space-evenly; */
+    }
+}

@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
-import '../styles/navbar.css'
-const Navbar = ({ onColorChange }) => {
+import React, { useState, useRef } from 'react';
+import '../styles/navbar.css';
+
+const Navbar = ({ onColorChange,  onEnter  }) => {
   const [isButtonClicked, setIsButtonClicked] = useState(false);
+  const inputVal = useRef(null);
 
   const handleButtonClick = () => {
     if (isButtonClicked) {
@@ -10,30 +12,45 @@ const Navbar = ({ onColorChange }) => {
       onColorChange('sn');
     }
 
-    // Toggle the button click state
     setIsButtonClicked(!isButtonClicked);
+  };
+let val = true
+  const handleKey = (e) => {
+    if (e.key === 'Enter') {
+      const inputValue = inputVal.current.value;
+      onEnter(inputValue);
+      val = false
+    }
   };
 
   return (
     <>
-    <nav>
-      <button className={`fa-solid ${isButtonClicked ? 'fa-moon' : 'fa-sun'}`} onClick={handleButtonClick} id='toggleButton'></button>
-    
-    <div className="input" style={{ background: isButtonClicked ? 'rgba( 255, 255, 255, 0.15 )' : 'rgba( 0, 0, 0, 0.15 )' }} >
-    <button  className = 'fa fa-search'></button>
-    <input className = 'fa fa-search' style={{ color: isButtonClicked ? 'black' : 'white' }} placeholder='Search for your preferred city...'/>
-    </div>
+      <nav>
+        <h1>Weather</h1>
+        <div
+          className="input"
+          style={{
+            background: isButtonClicked
+              ? 'rgba( 255, 255, 255, 0.15 )'
+              : 'rgba( 0, 0, 0, 0.15 )',
+          }}
+        >
+          <button className="fa fa-search"></button>
+          <input
+            className="fa fa-search"
+            style={{ color: isButtonClicked ? 'black' : 'white' }}
+            placeholder="Search for your preferred city..."
+            ref={inputVal}
+            onKeyPress={handleKey}
+          />
+        </div>
 
-      <div className="button">
-    <button  className = 'fa fa-location'></button>
-    <span  style={{ color: isButtonClicked ? 'black' : 'white' }} >Current Location</span>
-
-      </div>
-      
-      
-     
-    </nav>
-      
+        <button
+          className={`fa-solid ${isButtonClicked ? 'fa-moon' : 'fa-sun'}`}
+          onClick={handleButtonClick}
+          id="toggleButton"
+        ></button>
+      </nav>
     </>
   );
 };
