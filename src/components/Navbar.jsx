@@ -26,7 +26,7 @@ let val = true
   return (
     <>
       <nav>
-        <h1>Weather</h1>
+        <h1 style={{fontSize: '2em'}}>Weather</h1>
         <div
           className="input"
           style={{

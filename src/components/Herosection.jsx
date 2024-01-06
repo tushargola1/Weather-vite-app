@@ -13,7 +13,7 @@ import rain from "../assets/icons/10d.png";
 import thunderstorm from "../assets/icons/11d.png";
 import snow from "../assets/icons/13d.png";
 import mist from "../assets/icons/50d.png";
-import Five_day from "./Five_day";
+
 
 const url = "https://api.openweathermap.org/data/2.5/weather?";  //present time api url
 const apiKey = "d01e3eddabd11902b2deedbff26539e7";
