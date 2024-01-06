@@ -32,10 +32,10 @@ let val = true
           style={{
             background: isButtonClicked
               ? 'rgba( 255, 255, 255, 0.15 )'
-              : 'rgba( 0, 0, 0, 0.15 )',
+              : 'rgba( 0, 0, 0, 0.15 )',  border: isButtonClicked?'0.5px solid black' : '' 
           }}
         >
-          <button className="fa fa-search"></button>
+          <button className="fa fa-search" ></button>
           <input
             className="fa fa-search"
             style={{ color: isButtonClicked ? 'black' : 'white' }}
