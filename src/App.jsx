@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Herosection from './components/Herosection';
 
+
 function App() {
   const [city , setCity] = useState('----')
   const [backgroundColor, setBackgroundColor] = useState(
@@ -43,6 +44,7 @@ function App() {
       <div style={{ background: backgroundColor, minHeight: '100vh', transition: 'background 0.3s' }}>
         <Navbar onColorChange={handleColorChange} onEnter={handleClick} />
         <Herosection city ={city} cardcolor = {cardcolor} boxShadow = {boxShadow} faColor = {faColor} celciusColor = {celcius}/>
+       
       </div>
     </>
   );

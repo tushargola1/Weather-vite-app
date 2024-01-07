@@ -6,7 +6,7 @@
     display: grid;
 
     grid-template-columns: repeat(2, 1fr);
-    place-items: center;
+    
   
   }
   
@@ -230,7 +230,7 @@
   
   @media screen and (max-width: 431px) {
     .row1 {
-      margin: 30vw 0;
+      margin-top: 22vw ;
     }
     .time-date {
       display: none;
@@ -239,7 +239,9 @@
       width: 30vw;
       height: 30vw;
     }
-  
+  .icon p{
+    font-size: 2.2rem
+  }
     .degree {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;

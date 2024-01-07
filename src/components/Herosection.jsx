@@ -18,6 +18,7 @@ import mist from "../assets/icons/50d.png";
 const url = "https://api.openweathermap.org/data/2.5/weather?";  //present time api url
 const apiKey = "d01e3eddabd11902b2deedbff26539e7";
 
+
 const Herosection = ({ city, cardcolor, boxShadow, faColor, celciusColor }) => {
   const [currentDay, setCurrentDay] = useState(
     new Date().toLocaleDateString(undefined, { weekday: "long" })
@@ -161,6 +162,7 @@ const Herosection = ({ city, cardcolor, boxShadow, faColor, celciusColor }) => {
 
   return (
     <>
+
       <div className="row1">
         <div
           className="time-date"
@@ -241,22 +243,9 @@ const Herosection = ({ city, cardcolor, boxShadow, faColor, celciusColor }) => {
           </div>
         </div>
 
-        {/* second column  */}
-
-
-{/* days forecast */}
-        <div className="five-day-forecast"> 
-      <div className="days-forecast">
-  
+       
       </div>
-        </div>
 
-        {/* hourly forecast */}
-        <div className="hourly-forecast">  
-
-        </div>
-     
-      </div>
     </>
   );
 };
